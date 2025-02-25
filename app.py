@@ -12,11 +12,12 @@ collection = db.get_collection("items")
 
 @app.route('/')
 def home():
-    return "Flask App running successfully!"
+    return "Coffee is Hot But Taste is Good !"
 
 @app.route('/items', methods=['GET'])
 def get_items():
     items = list(collection.find({}, {"_id": 0}))
+    print("The items are printed")
     return jsonify(items)
 
 @app.route('/items', methods=['POST'])
