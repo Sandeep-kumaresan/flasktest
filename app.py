@@ -12,7 +12,7 @@ collection = db.get_collection("items")
 
 @app.route('/')
 def home():
-    return "Flask App with MongoDB on Azure!"
+    return "Flask App running successfully!"
 
 @app.route('/items', methods=['GET'])
 def get_items():
