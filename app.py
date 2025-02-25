@@ -12,7 +12,7 @@ collection = db.get_collection("items")
 
 @app.route('/')
 def home():
-    return "Flask App running successfully!"
+    return "Coffee is Hot But Taste is Good !"
 
 @app.route('/items', methods=['GET'])
 def get_items():
