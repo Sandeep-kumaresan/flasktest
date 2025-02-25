@@ -63,6 +63,8 @@ jobs:
 
       - name: Unzip artifact for deployment
         run: unzip release.zip
+      - name: Set Subscription (Fix)
+        run: az account set --subscription ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_6758945A891D4C409AB1F8A43BDC2364 }}
 
       
       - name: Login to Azure
