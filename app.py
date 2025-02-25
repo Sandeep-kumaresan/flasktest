@@ -17,6 +17,7 @@ def home():
 @app.route('/items', methods=['GET'])
 def get_items():
     items = list(collection.find({}, {"_id": 0}))
+    print("The items are printed")
     return jsonify(items)
 
 @app.route('/items', methods=['POST'])
